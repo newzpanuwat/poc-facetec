@@ -1,0 +1,75 @@
+<script type="text/javascript" src="./dist/main.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>::Facetec::Facescan</title>
+  </head>
+  <style>
+    .btn-gap {
+      display: flex;
+      justify-content: left;
+      padding-top: 1rem;
+      gap: 1rem;
+    }
+    #root {
+      padding-left: 3rem;
+    }
+  </style>
+  <body>
+    <div id="root">
+      <span style="font-size: 24pt;">Facetec (development)</span>
+      <hr>
+      <div class="btn-gap">
+        <span
+          ><a href="https://dashboard.facetec.com/liveness-checks" target="_blank"
+            >Dashboard</a
+          ></span
+        >
+        <span
+          ><a href="https://dev.facetec.com/getting-started" target="_blank"
+            >Documents</a
+          ></span
+        >
+      </div>
+      <div class="btn-gap">
+        
+        <button
+          id="”liveness-button”"
+          onclick="MyFaceTecApp.onLivenessCheckPressed()"
+        >
+          3D Liveness Checked
+        </button>
+        <button
+          id="enroll-button”"
+          onclick="MyFaceTecApp.onEnrollCheckPressed()"
+        >
+          onEnrollCheck
+        </button>
+      </div>
+      </div>
+      <div style="display: block; padding-left: 3rem">
+        <h2>Features</h2>
+        <img src="./assets/facetec-feat.png"></img>
+        <h2>Main features</h2>
+        <ul>
+          <li>Liveness3d checked</li>
+          <li>Enrollment checked</li>
+          <li>photoIDMatch checked</li>
+        </ul>
+  
+        <h2>Flow</h2>
+        <img src="./assets/flow.png"></img>
+
+        <h2>Problems</h2>
+        <div style="padding-bottom: 3rem;">
+          <ul>
+            <li>Compatible: SDK made from javascript classes</li>
+            <li>Cost: some features need to paid</li>
+            <li>Stuk: How to get only base64, after facescan</li>
+          </ul>
+        </div>
+      </div>
+  </body>
+</html>
